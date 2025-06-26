@@ -1,0 +1,232 @@
+﻿<Window
+    x:Class="GettingRealRoeq.View.BookingWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GettingRealRoeq.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Booking Window"
+    Width="500"
+    Height="750"
+    xml:lang="Eng"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/image (1).webp" Stretch="UniformToFill" />
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <TextBox
+            x:Name="nameBox"
+            Grid.Row="1"
+            Grid.Column="2"
+            Width="200"
+            Height="20"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="13"
+            Foreground="Black"
+            Text="{Binding EmployeeName}" />
+        <Label
+            Grid.Row="1"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Name"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <Label
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Location"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <ComboBox
+            x:Name="locationBox"
+            Grid.Row="2"
+            Grid.Column="2"
+            Width="200"
+            Height="20"
+            FontFamily="{StaticResource CustomFont}"
+            ItemsSource="{Binding Location.LocationComboboxItems}"
+            SelectedItem="{Binding LocationName}" />
+        <Label
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Robot"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <ComboBox
+            x:Name="RobotComboBox"
+            Grid.Row="3"
+            Grid.Column="2"
+            Width="200"
+            Height="20"
+            FontFamily="{StaticResource CustomFont}"
+            ItemsSource="{Binding Robot.RobotComboboxItems}"
+            SelectedItem="{Binding RobotName}" />
+        <Label
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Topmodule"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <ComboBox
+            x:Name="TopModuleComboBox"
+            Grid.Row="4"
+            Grid.Column="2"
+            Width="200"
+            Height="20"
+            FontFamily="{StaticResource CustomFont}"
+            ItemsSource="{Binding TopModule.TopModuleComboboxItems}"
+            SelectedItem="{Binding TopModuleName}" />
+
+        <Label
+            Grid.Row="7"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Activity"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <ComboBox
+            x:Name="Activity"
+            Grid.Row="7"
+            Grid.Column="2"
+            Width="200"
+            Height="20"
+            FontFamily="{StaticResource CustomFont}"
+            ItemsSource="{Binding Activity.ActivityComboboxItems}"
+            SelectedItem="{Binding ActivityName}" />
+        <Label
+            Grid.Row="5"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Start date"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <Label
+            Grid.Row="5"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Content="End date"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+
+        <DatePicker
+            x:Name="startDateBox"
+            Grid.Row="5"
+            Grid.Column="2"
+            Width="100"
+            Height="25"
+            HorizontalAlignment="Left"
+            BorderThickness="0"
+            DisplayDateStart="{Binding StartDate}"
+            FontFamily="{StaticResource CustomFont}"
+            SelectedDate="{Binding StartDate}"
+            SelectedDateFormat="Short" />
+        <DatePicker
+            x:Name="endDateBox"
+            Grid.Row="5"
+            Grid.Column="2"
+            Width="100"
+            Height="25"
+            HorizontalAlignment="Right"
+            BorderThickness="0"
+            DisplayDateStart="{Binding EndDate}"
+            FontFamily="{StaticResource CustomFont}"
+            SelectedDate="{Binding EndDate}"
+            SelectedDateFormat="Short" />
+        <Label
+            Grid.Row="8"
+            Grid.Column="2"
+            Margin="-5,0,20,50"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Comment"
+            FontFamily="{StaticResource CustomFont}"
+            FontSize="18"
+            Foreground="White" />
+        <TextBox
+            x:Name="commentBox"
+            Grid.Row="8"
+            Grid.Column="2"
+            Width="200"
+            Height="55"
+            Margin="0,30,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="White"
+            FontFamily="{StaticResource CustomFont}"
+            Text="{Binding CommentBoxInput}" />
+        <Button
+            Grid.Row="9"
+            Grid.Column="2"
+            Width="140"
+            Height="40"
+            Margin="-5,20,-10,20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Command="{Binding ConfirmBookingCmd}"
+            Content="Create booking"
+            Cursor="Hand"
+            FontSize="17"
+            Style="{DynamicResource ButtonStyle}" />
+        <Button
+            Grid.Row="9"
+            Grid.Column="2"
+            Width="100"
+            Height="40"
+            Margin="-20,20,0,20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Command="{Binding CancelBtnCmd}"
+            Content="Cancel"
+            Cursor="Hand"
+            FontSize="17"
+            Style="{DynamicResource ButtonStyle}" />
+
+
+
+    </Grid>
+</Window>

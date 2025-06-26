@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingRealRoeq", "GettingRealRoeq\GettingRealRoeq.csproj", "{20487370-199A-4067-85C7-FCBFD49220C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "Unittest\UnitTest.csproj", "{6B2705BA-6379-408C-8F8B-A6DF7A6D46CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20487370-199A-4067-85C7-FCBFD49220C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20487370-199A-4067-85C7-FCBFD49220C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20487370-199A-4067-85C7-FCBFD49220C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20487370-199A-4067-85C7-FCBFD49220C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2705BA-6379-408C-8F8B-A6DF7A6D46CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2705BA-6379-408C-8F8B-A6DF7A6D46CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2705BA-6379-408C-8F8B-A6DF7A6D46CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2705BA-6379-408C-8F8B-A6DF7A6D46CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06A62B5E-390C-41D8-B210-46C393B165C3}
+	EndGlobalSection
+EndGlobal

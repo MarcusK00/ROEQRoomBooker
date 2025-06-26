@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\TitilliumWeb-Regular.ttf" />
+    <None Remove="View\image %281%29.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Fonts\TitilliumWeb-Regular.ttf" />
+    <Resource Include="Images\image %281%29.webp" />
+  </ItemGroup>
+
+</Project>
