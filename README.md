@@ -10,7 +10,7 @@ A desktop application for managing showroom and meeting‐room reservations. Bui
 - [Technologies](#technologies)  
 - [Architecture & Workflow](#architecture--workflow)  
 - [Installation & Setup](#installation--setup)  
-
+- [Developer Team](#developer-team)  
 ---
 
 ## 🧠 About
@@ -72,3 +72,18 @@ In a collaborative effort of six developers, we built the ROEQ Room Booker to he
    ```bash
    git clone https://github.com/MarcusK00/ROEQRoomBooker.git
    cd ROEQRoomBooker
+
+## 👤 Developer Team
+**Team Members:**
+- [Me](https://github.com/MarcusK00)
+  
+- [Bofl’s GitHub](https://github.com/bofl)
+
+- [Mcmofl’s GitHub](https://github.com/Mcmofl)
+
+- [Mibzo1’s GitHub](https://github.com/mibzo1)
+
+- [SimonFrom’s GitHub](https://github.com/simonfrom)
+
+
+Special thanks to ROEQ stakeholders for guidance and feedback.
